@@ -18,7 +18,7 @@
 {% if form is defined %}
   {% for _, messages in form.errors.items() recursive %}
     {% if messages is mapping %}
-      {{ loop(messages.items()) }}
+      {{ loop(messages.items() ) }}
     {% else %}
       <div class="alert alert-danger alert-dismissible fade show" role="alert">
         {{ ', '.join(messages) }}

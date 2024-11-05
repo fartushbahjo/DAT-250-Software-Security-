@@ -12,8 +12,8 @@
                     onclick="switchVisibility('#edit-details', '#view-details')">
               <span class="fa fa-edit me-1" aria-hidden="true"></span>Edit
             </button>
-            <!--View profile details-->
-            <div id="view-details" style="display: block;">
+            <!-- View profile details -->
+            <div id="view-details">
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">
                   <div class="row">
@@ -59,8 +59,8 @@
                 </li>
               </ul>
             </div>
-            <!--Edit details-->
-            <div id="edit-details" style="display: none;">
+            <!-- Edit details -->
+            <div id="edit-details">
               <form action="" method="post" novalidate>
                 <div class="mb-2">{{ form.education(class_="form-control") }}</div>
                 <div class="mb-2">{{ form.employment(class_="form-control") }}</div>
